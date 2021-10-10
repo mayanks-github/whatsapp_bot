@@ -1,16 +1,11 @@
-# This is a sample Python script.
+import eel
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+eel.init('web')
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+@eel.expose
+def generate_qr():
+    print("QR code generation successful.")
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+eel.start('index.html', size=(1010, 600))
