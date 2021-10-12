@@ -13,7 +13,7 @@ def generate_qr():
 
 
 @eel.expose
-def pythonFunction(wildcard="*"):
+def fileSave(wildcard="*"):
     app = wx.App(None)
     style = wx.FD_SAVE
     dialog = wx.FileDialog(None, 'Open', wildcard=wildcard, style=style)
